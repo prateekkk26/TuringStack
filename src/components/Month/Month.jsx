@@ -44,7 +44,7 @@ const Month = () => {
 			{
 				days.map((day, key) => {
 					{
-						if (day == 5) {
+						if (day === 5) {
 							return <div key={key} className={styles.info}>
 										<button style={
 											show1 ? { color: "rgb(44, 44, 84)"} : null
@@ -53,7 +53,7 @@ const Month = () => {
 											show1 ? <Info day={five} /> : null
 										}
 									</div>
-						}else if (day == 16) {
+						}else if (day === 16) {
 							return <div key={key} className={styles.info}>
 										<button style={
 											show2 ? { color: "rgb(44, 44, 84)"} : null

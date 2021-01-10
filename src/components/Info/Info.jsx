@@ -8,7 +8,7 @@ const Info = ({day}) => {
 			<div className={styles.container}>
 				<div className={styles.flexItem}>
 					<p>{day.name}</p>
-					<p>{day.price}</p>
+					<p className={styles.price}>{day.price}</p>
 				</div>
 				<div className={styles.flexItem}>
 					<p><span>Date:</span>&nbsp; &nbsp;{day.date}</p>
