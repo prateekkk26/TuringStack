@@ -1,0 +1,29 @@
+.homepage {
+	max-width: 114rem;
+	margin: 2rem auto;
+	/*position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);*/
+	height: auto;
+	border: 5px solid var(--mainGray);
+	padding: 0.5rem;
+	border-radius: 2rem;
+	background-color: var(--mainBlue);
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+}
+
+@media screen and (max-width: 1000px) {
+	.homepage {
+		padding: 1.2rem;
+	}
+
+	.container {
+		flex-direction: column;
+	}
+}

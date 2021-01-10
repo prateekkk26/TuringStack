@@ -1,0 +1,111 @@
+.calender {
+	align-self: stretch;
+	background-color: var(--mainWhite);
+	border-radius: 2rem;
+	max-width: 40rem;
+	padding: 0 1rem;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	background-image: url('https://cdn.pixabay.com/photo/2017/12/03/20/31/background-2995826__340.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+	padding: 3.5rem;
+}
+
+.heading {
+	max-width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+}
+
+.flexItem {
+	margin: 0 0.5rem;
+}
+
+.flexItem:first-child {
+	margin-left: 0;
+}
+
+.flexItem:last-child {
+	margin-left: auto;
+}
+
+.heading h1 {
+	color: var(--mainBlue);
+	font-size: 2.5rem;
+}
+
+.iconContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.icon {
+	font-size: 2rem;
+	color: var(--mainGray);
+}
+
+/*.icon:last-child {
+	margin-left: 1.7rem;
+}*/
+
+.calender select {
+	text-align: right;
+	border-radius: 10px;
+	padding: 0.3rem;
+}
+
+.calender select:focus {
+	outline: none;
+}
+
+.images {
+	margin-top: auto;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 1.5rem;
+}
+
+.img1,
+.img2 {
+	width: 40%;
+}
+
+@media screen and (max-width: 1000px) {
+	.calender {
+		max-width: 100%;
+	}
+
+	.img1,
+	.img2 {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.heading {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.flexItem {
+		margin: 0.5rem 0;
+	}
+
+	.icon:first-child {
+		margin-right: 0.5rem;
+	}
+
+	.flexItem:last-child {
+		margin-left: 0;
+	}
+}

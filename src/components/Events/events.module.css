@@ -1,0 +1,19 @@
+.events {
+	flex: 1;
+	margin-left: 1rem;
+}
+
+.container {
+	max-width: 70rem;
+	margin: 2rem auto;
+}
+
+@media screen and (max-width: 1000px) {
+	.events {
+		margin-left: 0;
+	}
+
+	.container {
+		max-width: 100%;
+	}
+}
