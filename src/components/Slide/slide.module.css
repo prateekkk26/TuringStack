@@ -1,0 +1,16 @@
+.slide {
+	align-self: center;
+}
+.icon {
+	font-size: 3rem;
+	color: var(--mainGray);
+}
+
+@media screen and (max-width: 1000px) {
+	.container {
+		margin: 1rem auto;
+	}
+	.icon {
+		transform: rotate(90deg);
+	}
+}
